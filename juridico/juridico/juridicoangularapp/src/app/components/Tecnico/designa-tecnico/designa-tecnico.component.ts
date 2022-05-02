@@ -39,6 +39,14 @@ export class DesignaTecnicoComponent implements OnInit {
       autoplay: {
         delay: 1000,
       },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        480: {
+          slidesPerView: 3,
+        },
+      },
       // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
