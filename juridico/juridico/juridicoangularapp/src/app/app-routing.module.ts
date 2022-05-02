@@ -9,6 +9,7 @@ import { DesignaTecnicoComponent } from './components/Tecnico/designa-tecnico/de
 import { ConfirmaDesignacaoTecnicoComponent } from './components/Tecnico/confirma-designacao-tecnico/confirma-designacao-tecnico.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'designatecnico', pathMatch: 'full' },
   {
     path: 'listarempresas',
     component: ListarEmpresasComponent,
