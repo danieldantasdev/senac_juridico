@@ -1,0 +1,138 @@
+<main class="container-fluid l-main">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3>Resumo do processo</h3>
+        </div>
+
+        <div class="card-body l-main__card">
+          <div class="row l-main__card-item">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12 my-2">
+                  <h4>Dados do processo</h4>
+                </div>
+                <div class="col-12 col-md-6 my-2">
+                  <div class="form-group">
+                    <label for="numeroProcesso">Número do processo</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="numeroProcesso"
+                      placeholder="Número do processo"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 my-2">
+                  <div class="form-group">
+                    <label for="numeroProcesso">Número do processo</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="numeroProcesso"
+                      placeholder="Número do processo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <form
+                id="form-designa-tecnico"
+                name="form-designa-tecnico"
+                class="form-designa-tecnico"
+                novalidate
+              >
+                <div class="row">
+                  <div class="col-12 my-4">
+                    <div class="form-group">
+                      <label for="input-id-tecnico"
+                        >Técnicos selecionados</label
+                      >
+                      <select
+                        class="form-control"
+                        id="input-id-tecnico"
+                        name="input-id-tecnico"
+                        formControlName="idTecnico"
+                        required
+                      >
+                        <option value="">Técnico 1</option>
+                        <option value="">Técnico 2</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 my-2">
+                    <div class="form-group">
+                      <label for="input-id-proceso"
+                        >Processos selecionados</label
+                      >
+                      <select
+                        class="form-control"
+                        id="input-id-proceso"
+                        name="input-id-proceso"
+                        formControlName="idProceso"
+                        required
+                      >
+                        <option value="">Processos 1</option>
+                        <option value="">Processos 2</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 my-4">
+                    <div class="form-group">
+                      <label for="input-fecha-designacion"
+                        >Fecha de designación</label
+                      >
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="input-fecha-designacion"
+                        name="input-fecha-designacion"
+                        formControlName="fechaDesignacion"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-12 col-md-6 l-main__card-textarea">
+              <p>Daniel</p>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 l-main__card-textarea p-5">
+          <p>Daniel</p>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-12 l-footer__button">
+              <button type="button" class="btn btn-danger" (click)="cancel()">
+                <i class="fas fa-times"></i>
+                Cancelar
+              </button>
+              <button
+                type="submit"
+                form="form-designa-tecnico"
+                class="btn btn-primary"
+              >
+                <i class="fas fa-check"></i>
+                Designar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
