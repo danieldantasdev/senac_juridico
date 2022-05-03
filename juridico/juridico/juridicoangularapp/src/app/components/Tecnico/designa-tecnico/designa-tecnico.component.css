@@ -83,7 +83,7 @@ textarea {
   border: 2px solid #ccc;
   margin: 1rem 0;
   resize: vertical;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 @media screen and (max-width: 320px) {
@@ -182,6 +182,11 @@ textarea {
   height: 3rem;
   position: relative;
   top: 1rem;
+}
+
+.swiper-scrollbar{
+  position: relative;
+  top: 23.5rem;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
