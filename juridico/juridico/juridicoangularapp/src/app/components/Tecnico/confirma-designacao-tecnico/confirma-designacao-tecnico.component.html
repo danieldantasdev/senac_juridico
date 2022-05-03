@@ -13,6 +13,7 @@
                 <div class="col-12 my-2">
                   <h4>Dados do processo</h4>
                 </div>
+             
                 <div class="col-12 col-md-6 my-2">
                   <div class="form-group">
                     <label for="numeroProcesso">Número do processo</label>
@@ -24,69 +25,10 @@
                     />
                   </div>
                 </div>
-                <div class="col-12 col-md-6 my-2">
-                  <div class="form-group">
-                    <label for="numeroProcesso">Número do processo</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="numeroProcesso"
-                      placeholder="Número do processo"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="col-12 col-md-6">
-              <form
-                id="form-designa-tecnico"
-                name="form-designa-tecnico"
-                class="form-designa-tecnico"
-                novalidate
-              >
-                <div class="row">
-                  <div class="col-12 my-4">
+                  <div class="col-12 col-md-6 my-2">
                     <div class="form-group">
-                      <label for="input-id-tecnico"
-                        >Técnicos selecionados</label
-                      >
-                      <select
-                        class="form-control"
-                        id="input-id-tecnico"
-                        name="input-id-tecnico"
-                        formControlName="idTecnico"
-                        required
-                      >
-                        <option value="">Técnico 1</option>
-                        <option value="">Técnico 2</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-12 my-2">
-                    <div class="form-group">
-                      <label for="input-id-proceso"
-                        >Processos selecionados</label
-                      >
-                      <select
-                        class="form-control"
-                        id="input-id-proceso"
-                        name="input-id-proceso"
-                        formControlName="idProceso"
-                        required
-                      >
-                        <option value="">Processos 1</option>
-                        <option value="">Processos 2</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-12 my-4">
-                    <div class="form-group">
-                      <label for="input-fecha-designacion">Data</label>
+                      <label for="input-fecha-designacion">Data da designação</label>
                       <input
                         type="date"
                         class="form-control"
@@ -97,31 +39,62 @@
                       />
                     </div>
                   </div>
-                </div>
-              </form>
+              </div>
             </div>
 
-            <div class="col-12 col-md-6 l-main__card-textarea">
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Observações"
-              ></textarea>
-            </div>
-          </div>
-        </div>
+       
+              <div class="col-12 col-md-6 my-2">
+                <table class="table table-striped table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                    </tr>
+                 
+                  </tbody>
+                </table>
+              </div>
 
-        <div class="col-12 l-main__card-textarea p-5">
-          <textarea
+              <div class="col-12 col-md-6 my-2 l-main__card-textarea">
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Observações"
+                ></textarea>
+              </div>
+
+        <div class="col-6 l-main__card-textarea p-5">
+          <!-- <textarea
             name=""
             id=""
             cols="30"
             rows="10"
             placeholder="Observações"
-          ></textarea>
+          ></textarea> -->
+          <div class="input-group mb-3">
+            <div class="input-group-text">
+              <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with checkbox">
+          </div>
         </div>
+      </div>
+    </div>
         <div class="card-footer">
           <div class="row">
             <div class="col-12 l-footer__button">
