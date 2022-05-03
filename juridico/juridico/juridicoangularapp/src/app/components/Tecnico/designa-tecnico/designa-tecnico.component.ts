@@ -26,6 +26,7 @@ export class DesignaTecnicoComponent implements OnInit {
         Pagination,
         Mousewheel,
         Autoplay,
+        Scrollbar,
         Keyboard,
         Manipulation,
       ],
@@ -36,9 +37,9 @@ export class DesignaTecnicoComponent implements OnInit {
         type: 'bullets',
         clickable: true,
       },
-      autoplay: {
-        delay: 1000,
-      },
+      // autoplay: {
+      //   delay: 1000,
+      // },
       breakpoints: {
         320: {
           slidesPerView: 1,
