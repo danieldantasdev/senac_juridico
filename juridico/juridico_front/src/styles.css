@@ -270,11 +270,11 @@ sub {
 
   /* ========== HSL color mode ========== */
   --body-color: hsl(186, 60%, 95%);
-  --bg-color: hsl(0 0% 98%);
+  --bg-color: hsla(208, 96%, 28%, 1);
   --button-color: hsl(186, 100%, 68%);
   --button-dark-color: hsl(186, 48%, 50%);
-  --toggle-color: hsl(186, 200%, 70%);
-  --growth-color: hsl(186, 73%, 47%);
+  --toggle-color: hsla(208, 96%, 18%, 1);
+  --growth-color: hsla(208, 96%, 58%, 1);
   --wrapper-color: hsl(186, 50%, 13%);
   --card-color: hsl(186 0% 100%);
 
@@ -426,6 +426,20 @@ html {
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   color: var(--button-dark-color);
+}
+
+body.active {
+  --bg-color: #171717;
+  --body-color: #171717;
+  --card-color: #2f2c2c;
+  --growth-color: #5d20cf;
+  --wrapper-color: #2e1f3f;
+  --button-color: #8a52f3;
+  --button-dark-color: #58329e;
+  --toggle-color: #8a52f3;
+  --text-color: #fff;
+  --text-span-color: #9257ff;
+  --text-color-light: #c3b6ee;
 }
 
 /* ==================== Animations ==================== */

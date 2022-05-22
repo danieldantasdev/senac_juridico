@@ -1,19 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Muli:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
+/* ==================== Header ==================== */
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 60px; */
+  background-color: #fff;
+  z-index: 100;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+#menu-btn,
+#theme-btn,
+#increase-btn,
+#decrease-btn {
+  position: fixed;
+  color: var(--toggle-color);
+  font-size: 3.5rem;
+  cursor: pointer;
+  transition: var(--transition-general);
+  z-index: 4;
+  text-shadow: 0.1rem 0.1rem 1px var(--text-shadow);
+}
+
+#menu-btn:hover,
+#theme-btn:hover,
+#font-btn:hover,
+#increase-btn:hover,
+#decrease-btn:hover {
+  filter: brightness(1.2);
+  transform: scale(1.2);
+}
+
+#menu-btn {
+  top: 5rem;
+  right: 5rem;
+}
+
+#theme-btn {
+  top: 5rem;
+  left: 5rem;
+}
+
+#increase-btn {
+  top: 12rem;
+  left: 5rem;
+}
+
+#decrease-btn {
+  top: 19rem;
+  left: 5rem;
+}
+
+#theme-btn.fa-sun,
+#menu-btn.fa-times,
+#font-btn.fa-font {
+  transform: rotate(180deg);
+}
+
+body.growth {
+  font-size: 10rem;
+}
+
+#font-btn.fa-font.growth {
+  font-size: 90rem;
+  background: red;
+}
+
 /* ==================== Navigation ==================== */
 .l-nav__container {
-  width: 30rem;
+  width: 10rem;
   height: 100vh;
   background: var(--bg-color);
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  /* visibility: hidden; */
   transition: var(--transition-general);
-  z-index: 2;
+  z-index: 6;
 }
 
 .l-nav__container.show-menu {
@@ -33,7 +108,7 @@
 }
 
 .l-nav__menu li a {
-  font: 400 2.5rem var(--font-primary);
+  /* font: 400 0.2rem var(--font-primary); */
   color: var(--text-color);
   transition: var(--transition-general);
   padding: 1rem;
@@ -49,16 +124,27 @@
 
 .l-nav__menu-resume {
   background: var(--toggle-color);
+  /* padding: 0; */
+  border-radius: 100px;
+}
+
+.l-nav__menu-resume > i {
+  font-size: 1.5rem;
+  /* padding: 0.7rem; */
+}
+
+.l-nav__menu > li > a > img,
+.l-nav__menu > li > a > i {
+  /* font-size: 1rem; */
+  width: 2rem;
+  padding: 0;
+  margin: 0;
 }
 
 .l-nav__menu-resume:hover {
   color: var(--wrapper-color);
-  letter-spacing: 0.2rem;
+  /* letter-spacing: 0.2rem; */
   filter: brightness(0.8);
-}
-
-.l-nav__menu-resume i {
-  margin-left: 1rem;
 }
 
 /* ==================== Biblioteca Hover ==================== */
