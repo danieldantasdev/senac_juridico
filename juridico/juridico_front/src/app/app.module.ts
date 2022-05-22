@@ -12,6 +12,8 @@ import { ApagarEmpresaComponent } from './components/Empresa/apagar-empresa/apag
 import { DesignaTecnicoComponent } from './components/Tecnico/designa-tecnico/designa-tecnico.component';
 import { ConfirmaDesignacaoTecnicoComponent } from './components/Tecnico/confirma-designacao-tecnico/confirma-designacao-tecnico.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HistoricoNavegacaoComponent } from './components/Tecnico/historico-navegacao/historico-navegacao.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     DesignaTecnicoComponent,
     NavBarComponent,
     ConfirmaDesignacaoTecnicoComponent,
+    FooterComponent,
+    HistoricoNavegacaoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
