@@ -1,3 +1,5 @@
+<app-nav-bar></app-nav-bar>
+
 <main class="container-fluid l-main">
   <div class="row">
     <div class="col-12">
@@ -16,12 +18,15 @@
 
                 <div class="col-12 col-md-6 my-2">
                   <div class="form-group">
-                    <label for="numeroProcesso">Número do processo</label>
+                    <label for="numeroProcesso"
+                      >Número e nome do processo</label
+                    >
                     <input
                       type="text"
                       class="form-control"
                       id="numeroProcesso"
-                      placeholder="Número do processo"
+                      placeholder="Número e nome do processo"
+                      disabled
                     />
                   </div>
                 </div>
@@ -37,36 +42,94 @@
                       id="input-fecha-designacion"
                       name="input-fecha-designacion"
                       formControlName="fechaDesignacion"
+                      placeholder="Data da designação"
                       required
+                      disabled
                     />
                   </div>
                 </div>
               </div>
             </div>
 
+            <div class="col-12 col-md-6">
+              <h3>Técnicos selecionados</h3>
+              <div class="card l-selection text-start">
+                <div class="l-selection__item card-header d-flex">
+                  <div class="selection">
+                    <i class="bi bi-person"></i>
+                    <p>Nome</p>
+                    <p>Função</p>
+                  </div>
+
+                  <div class="selection">
+                    <i class="bi bi-person"></i>
+                    <p>Nome</p>
+                    <p>Função</p>
+                  </div>
+
+                  <div class="selection">
+                    <i class="bi bi-person"></i>
+                    <p>Nome</p>
+                    <p>Função</p>
+                  </div>
+
+                  <div class="selection">
+                    <i class="bi bi-person"></i>
+                    <p>Nome</p>
+                    <p>Função</p>
+                  </div>
+
+                  <div class="selection">
+                    <i class="bi bi-person"></i>
+                    <p>Nome</p>
+                    <p>Função</p>
+                  </div>
+
+                  <div class="selection">
+                    <i class="bi bi-person"></i>
+                    <p>Nome</p>
+                    <p>Função</p>
+                  </div>
+
+                  <div class="selection">
+                    <i class="bi bi-person"></i>
+                    <p>Nome</p>
+                    <p>Função</p>
+                  </div>
+
+                  <div class="selection">
+                    <i class="bi bi-person"></i>
+                    <p>Nome</p>
+                    <p>Função</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--
             <div class="col-12 col-md-6 my-2">
               <table class="table table-striped table-hover">
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Função</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
                     <td>Mark</td>
-                    <td>Otto</td>
+                    <td>Advogado familiar</td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
                     <td>Jacob</td>
-                    <td>Thornton</td>
+                    <td>Advogado trabalhista</td>
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </div> -->
 
             <div class="col-12 col-md-6 my-2 l-main__card-textarea">
               <textarea
@@ -78,14 +141,8 @@
               ></textarea>
             </div>
 
-            <div class="col-6 l-main__card-textarea p-5">
-              <!-- <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Observações"
-          ></textarea> -->
+            <div class="col-12 l-main__card-textarea p-5">
+              <h3>Termo de complice</h3>
               <div class="input-group mb-3">
                 <div class="input-group-text">
                   <input
@@ -99,6 +156,7 @@
                   type="text"
                   class="form-control"
                   aria-label="Text input with checkbox"
+                  placeholder="Termo de complice"
                 />
               </div>
             </div>

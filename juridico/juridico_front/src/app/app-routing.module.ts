@@ -7,6 +7,7 @@ import { AtualizarEmpresaComponent } from './components/Empresa/atualizar-empres
 import { ApagarEmpresaComponent } from './components/Empresa/apagar-empresa/apagar-empresa.component';
 import { DesignaTecnicoComponent } from './components/Tecnico/designa-tecnico/designa-tecnico.component';
 import { ConfirmaDesignacaoTecnicoComponent } from './components/Tecnico/confirma-designacao-tecnico/confirma-designacao-tecnico.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'designatecnico', pathMatch: 'full' },

@@ -7,8 +7,31 @@
   align-items: center;
 }
 
-.card {
+/* .card {
   min-width: 80vw;
+} */
+
+.l-selection {
+  /* width: 25rem; */
+  /* max-height: 10rem; */
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.l-selection__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
 .l-main__card {
@@ -25,6 +48,20 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.bi-person {
+  font-size: 4rem;
+}
+
+.bi-file-earmark-zip-fill {
+  font-size: 3rem;
+}
+
+.bi-circle-fill {
+  position: relative;
+  bottom: 4rem;
+  left: 3rem;
 }
 
 .l-footer__button {
@@ -79,6 +116,22 @@ textarea {
   .l-main__card {
     flex-direction: column;
     gap: 0;
+  }
+
+  .l-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .l-section__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   /* .form-group {

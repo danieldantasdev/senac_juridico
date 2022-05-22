@@ -10,6 +10,7 @@ import { AdicionarEmpresaComponent } from './components/Empresa/adicionar-empres
 import { AtualizarEmpresaComponent } from './components/Empresa/atualizar-empresa/atualizar-empresa.component';
 import { ApagarEmpresaComponent } from './components/Empresa/apagar-empresa/apagar-empresa.component';
 import { DesignaTecnicoComponent } from './components/Tecnico/designa-tecnico/designa-tecnico.component';
+import { ConfirmaDesignacaoTecnicoComponent } from './components/Tecnico/confirma-designacao-tecnico/confirma-designacao-tecnico.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
@@ -21,6 +22,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     ApagarEmpresaComponent,
     DesignaTecnicoComponent,
     NavBarComponent,
+    ConfirmaDesignacaoTecnicoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
