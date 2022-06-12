@@ -70,13 +70,17 @@ mat-menu-item {
   border-radius: 10px;
   margin: 16px;
   margin-left: 32px;
+  padding: 16px;
 
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  flex-direction: column;
 
   color: gray;
   height: auto;
+  width: max-content;
+  overflow: hidden;
 }
 
 mat-sidenav-container {
