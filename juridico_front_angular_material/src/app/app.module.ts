@@ -7,9 +7,15 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { APP_EXTRA_OPTIONS, APP_ROUTES } from './app.routes';
+
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { FooterComponent } from './footer/footer.component';
+import { ConfirmaDesignacaoComponent } from './confirma_designacao/confirma-designacao.component';
+import { DesignacaoTecnicoComponent } from './designacao_tecnico/designacao-tecnico.component';
+import { HistoricoNavegacaoComponent } from './historico_navegacao/historico-navegacao.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -17,21 +23,20 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
     FlightModule,
-    RouterModule.forRoot([...APP_ROUTES], {...APP_EXTRA_OPTIONS}),
+    RouterModule.forRoot([...APP_ROUTES], { ...APP_EXTRA_OPTIONS }),
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
-    MatFormFieldModule
+    MatFormFieldModule,
   ],
   declarations: [
     AppComponent,
@@ -39,9 +44,11 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     HomeComponent,
     FooterComponent,
+    DesignacaoTecnicoComponent,
+    ConfirmaDesignacaoComponent,
+    HistoricoNavegacaoComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}

@@ -5,18 +5,18 @@ export const APP_ROUTES: Routes = [
   {
     path: '',
     redirectTo: 'home',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path: '**',
-    redirectTo: 'home'
-  }
-]
+    redirectTo: 'home',
+  },
+];
 
 export const APP_EXTRA_OPTIONS: ExtraOptions = {
-  preloadingStrategy: PreloadAllModules
-}
+  preloadingStrategy: PreloadAllModules,
+};

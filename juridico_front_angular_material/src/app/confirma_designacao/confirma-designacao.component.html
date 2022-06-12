@@ -1,0 +1,167 @@
+<main class="container-fluid l-main">
+  <div class="row">
+    <h1 class="text-start fs-1">
+      Confirmação da designação do técnico responsável
+    </h1>
+    <hr />
+    <div class="col-12 my-5">
+      <div class="card">
+        <div class="card-header">
+          <h3>Resumo do processo</h3>
+        </div>
+
+        <div class="card-body l-main__card">
+          <div class="row l-main__card-item">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12 my-2">
+                  <h4>Dados do processo</h4>
+                </div>
+
+                <div class="col-12 col-md-6 my-2">
+                  <div class="form-group">
+                    <label for="numeroProcesso"
+                      >Número e nome do processo</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="numeroProcesso"
+                      placeholder="Número e nome do processo"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 my-2">
+                  <div class="form-group">
+                    <label for="input-fecha-designacion"
+                      >Data da designação</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="input-fecha-designacion"
+                      name="input-fecha-designacion"
+                      formControlName="fechaDesignacion"
+                      placeholder="Data da designação"
+                      required
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <h3>Técnicos selecionados</h3>
+                <div class="card l-selection text-start">
+                  <div class="l-selection__item card-header d-flex">
+                    <div class="selection">
+                      <i class="bi bi-person"></i>
+                      <p>Nome</p>
+                      <p>Função</p>
+                    </div>
+
+                    <div class="selection">
+                      <i class="bi bi-person"></i>
+                      <p>Nome</p>
+                      <p>Função</p>
+                    </div>
+
+                    <div class="selection">
+                      <i class="bi bi-person"></i>
+                      <p>Nome</p>
+                      <p>Função</p>
+                    </div>
+
+                    <div class="selection">
+                      <i class="bi bi-person"></i>
+                      <p>Nome</p>
+                      <p>Função</p>
+                    </div>
+
+                    <div class="selection">
+                      <i class="bi bi-person"></i>
+                      <p>Nome</p>
+                      <p>Função</p>
+                    </div>
+
+                    <div class="selection">
+                      <i class="bi bi-person"></i>
+                      <p>Nome</p>
+                      <p>Função</p>
+                    </div>
+
+                    <div class="selection">
+                      <i class="bi bi-person"></i>
+                      <p>Nome</p>
+                      <p>Função</p>
+                    </div>
+
+                    <div class="selection">
+                      <i class="bi bi-person"></i>
+                      <p>Nome</p>
+                      <p>Função</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 my-2 l-main__card-textarea">
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Observações"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="col-12 l-main__card-textarea p-5">
+              <h3>Termo de complice</h3>
+              <div class="input-group mb-3">
+                <div class="input-group-text">
+                  <input
+                    class="form-check-input mt-0"
+                    type="checkbox"
+                    value=""
+                    aria-label="Checkbox for following text input"
+                  />
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Text input with checkbox"
+                  placeholder="Termo de complice"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-12 l-footer__button">
+              <button type="button" class="btn btn-danger" (click)="cancel()">
+                <i class="fas fa-times"></i>
+                Cancelar
+              </button>
+              <button
+                type="submit"
+                form="form-designa-tecnico"
+                class="btn btn-primary"
+              >
+                <i class="fas fa-check"></i>
+                Designar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<app-footer></app-footer>
