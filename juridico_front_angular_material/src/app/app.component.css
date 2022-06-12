@@ -79,7 +79,7 @@ mat-menu-item {
 
   color: gray;
   height: auto;
-  width: max-content;
+  max-width: max-content;
   overflow: hidden;
 }
 

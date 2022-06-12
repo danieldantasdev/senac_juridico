@@ -75,6 +75,6 @@ export class DesignacaoTecnicoComponent implements OnInit {
 
   public confirm() {
     console.log('Cancelar');
-    this.router.navigate(['/confirmadesignacaotecnico']);
+    this.router.navigate(['/confirma-designacao']);
   }
 }
