@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
   selector: 'app-confirma-designacao',
   templateUrl: './confirma-designacao.component.html',
   styleUrls: ['./confirma-designacao.component.css'],
+  providers: [],
 })
 export class ConfirmaDesignacaoComponent implements OnInit {
   constructor(private router: Router) {}
@@ -21,6 +22,6 @@ export class ConfirmaDesignacaoComponent implements OnInit {
 
   public cancel() {
     console.log('Cancelar');
-    this.router.navigate(['/designatecnico']);
+    this.router.navigate(['/designacao-tecnico']);
   }
 }

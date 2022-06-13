@@ -1,14 +1,14 @@
 /* ================== Main ================== */
 
 hr {
-  border: 1px solid black;
+  border: 1px solid rgb(49, 49, 49);
   margin-top: 1rem;
 }
 
 .l-main {
-  padding: 10rem;
-  width: 80vw;
-  min-height: 100vh;
+  /* padding: 10rem; */
+  /* width: 80vw; */
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,6 +18,15 @@ hr {
 /* .card {
   min-width: 80vw;
 } */
+
+.card-2 {
+  /* min-width: 70vw; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
 
 .l-selection {
   /* width: 25rem; */
@@ -44,7 +53,7 @@ hr {
 
 .l-main__card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   /* gap: 4rem; */
   align-items: center;
@@ -52,7 +61,7 @@ hr {
 
 .l-main__card-item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;

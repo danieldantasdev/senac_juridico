@@ -79,8 +79,9 @@ mat-menu-item {
 
   color: gray;
   height: auto;
-  max-width: max-content;
-  overflow: hidden;
+  width: max-content;
+  /* width: 1000px; */
+  /* overflow: hidden; */
 }
 
 mat-sidenav-container {

@@ -109,14 +109,15 @@ textarea {
   color: #ffae00;
 }
 
-.l-footer {
+.l-footer__button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 5rem;
+  /* padding: 2rem 5rem; */
 }
 
-.l-footer > button {
+.l-footer__button > button {
+  margin: 2rem;
   width: 10rem;
 }
 
@@ -210,14 +211,15 @@ textarea {
 .swiper-wrapper {
   position: relative;
   width: 80vw;
+  /* max-width: max-content; */
   height: auto;
 }
 
 .swiper-slide {
   height: auto;
-  min-width: 2rem;
+  min-width: 1rem;
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
   position: relative;
   display: flex;
 }
