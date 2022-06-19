@@ -8,13 +8,14 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { APP_EXTRA_OPTIONS, APP_ROUTES } from './app.routes';
 
-import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { FooterComponent } from './footer/footer.component';
-import { ConfirmaDesignacaoComponent } from './confirma_designacao/confirma-designacao.component';
-import { DesignacaoTecnicoComponent } from './designacao_tecnico/designacao-tecnico.component';
-import { HistoricoNavegacaoComponent } from './historico_navegacao/historico-navegacao.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+
+import { HomeComponent } from './components/home/home.component';
+import { ConfirmaDesignacaoComponent } from './components/confirma_designacao/confirma-designacao.component';
+import { DesignacaoTecnicoComponent } from './components/designacao_tecnico/designacao-tecnico.component';
+import { HistoricoNavegacaoComponent } from './components/historico_navegacao/historico-navegacao.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';

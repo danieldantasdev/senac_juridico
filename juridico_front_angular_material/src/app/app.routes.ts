@@ -1,7 +1,7 @@
 import { ExtraOptions, PreloadAllModules, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { DesignacaoTecnicoComponent } from './designacao_tecnico/designacao-tecnico.component';
-import { ConfirmaDesignacaoComponent } from './confirma_designacao/confirma-designacao.component';
+import { HomeComponent } from './components/home/home.component';
+import { DesignacaoTecnicoComponent } from './components/designacao_tecnico/designacao-tecnico.component';
+import { ConfirmaDesignacaoComponent } from './components/confirma_designacao/confirma-designacao.component';
 
 export const APP_ROUTES: Routes = [
   {

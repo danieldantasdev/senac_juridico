@@ -68,8 +68,8 @@ mat-menu-item {
 .content {
   min-height: calc(100vh - 98px);
   border-radius: 10px;
-  margin: 16px;
-  margin-left: 32px;
+  /* margin: 16px; */
+  /* margin-left: 32px; */
   padding: 16px;
 
   display: flex;
@@ -79,9 +79,9 @@ mat-menu-item {
 
   color: gray;
   height: auto;
-  width: max-content;
+  /* width: max-content; */
   /* width: 1000px; */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 mat-sidenav-container {
