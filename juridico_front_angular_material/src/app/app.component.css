@@ -68,17 +68,18 @@ mat-menu-item {
 .content {
   min-height: calc(100vh - 98px);
   border-radius: 10px;
-  /* margin: 16px; */
+  margin: 16px;
   /* margin-left: 32px; */
   padding: 16px;
 
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
 
   color: gray;
   height: auto;
+  min-width: calc(100vw - 500px);
   /* width: max-content; */
   /* width: 1000px; */
   overflow: hidden;

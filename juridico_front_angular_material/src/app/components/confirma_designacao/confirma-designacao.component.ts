@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog, matDialogAnimations } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
   providers: [],
 })
 export class ConfirmaDesignacaoComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor(private router: Router, public dialog: MatDialog) {}
 
   ngOnInit(): void {}
 
@@ -23,5 +24,7 @@ export class ConfirmaDesignacaoComponent implements OnInit {
   public cancel() {
     console.log('Cancelar');
     this.router.navigate(['/designacao-tecnico']);
+
+    this.dialog.closeAll();
   }
 }

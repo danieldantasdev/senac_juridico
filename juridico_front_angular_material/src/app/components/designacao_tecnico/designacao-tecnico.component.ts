@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+
+import { ConfirmaDesignacaoComponent } from '../confirma_designacao/confirma-designacao.component';
 
 // import Swiper from 'swiper';
 import Swiper, {
@@ -18,7 +21,7 @@ import Swiper, {
   styleUrls: ['./designacao-tecnico.component.css'],
 })
 export class DesignacaoTecnicoComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor(private router: Router, public dialog: MatDialog) {}
 
   ngOnInit(): void {
     const swiper = new Swiper('.swiper', {
@@ -73,8 +76,18 @@ export class DesignacaoTecnicoComponent implements OnInit {
     console.log('Formulario de designação de tecnico');
   }
 
+  // public confirm() {
+  //   console.log('Cancelar');
+  //   this.router.navigate(['/confirma-designacao']);
+  // }
+
   public confirm() {
-    console.log('Cancelar');
-    this.router.navigate(['/confirma-designacao']);
+    const dialogRef = this.dialog.open(ConfirmaDesignacaoComponent);
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log(`Dialog result: ${result}`);
+    });
+
+    throw new Error('Method not implemented.');
   }
 }
