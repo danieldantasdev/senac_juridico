@@ -6,7 +6,7 @@ import { delay } from 'rxjs/operators';
 @Component({
   selector: 'juridico-app',
   templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css'],
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   @ViewChild(MatSidenav)

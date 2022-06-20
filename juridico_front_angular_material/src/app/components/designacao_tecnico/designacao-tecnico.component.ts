@@ -14,6 +14,7 @@ import Swiper, {
   Manipulation,
   Keyboard,
 } from 'swiper';
+import { listLazyRoutes } from '@angular/compiler/src/aot/lazy_routes';
 
 @Component({
   selector: 'app-designacao-tecnico',
@@ -69,7 +70,14 @@ export class DesignacaoTecnicoComponent implements OnInit {
   }
 
   public designaTecnico() {
-    console.log('Designa tecnico');
+    let lista: any = document.getElementById('lista');
+
+    let item = document.createElement('div');
+
+    lista.appendChild(item);
+
+    console.log(lista);
+    console.log(item);
   }
 
   public formDesignaTecnico() {

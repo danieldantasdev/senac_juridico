@@ -3,6 +3,12 @@
 hr {
   border: 1px solid rgb(49, 49, 49);
   margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.text-start {
+  text-align: start;
+  margin-left: 2rem;
 }
 
 .l-main {

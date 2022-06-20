@@ -33,6 +33,12 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   imports: [
@@ -56,6 +62,12 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatNativeDateModule,
     MatChipsModule,
     MatDialogModule,
+    MatProgressSpinnerModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatGridListModule,
+    ScrollingModule,
+    FlexLayoutModule,
   ],
   declarations: [
     AppComponent,

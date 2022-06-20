@@ -5,7 +5,7 @@
 
 <main class="container-fluid l-main">
   <div class="row">
-    <h1 class="text-start fs-1">Designação do técnico responsável</h1>
+    <h1 class="text-start">Designação do técnico responsável</h1>
     <hr />
 
     <div class="col-12 my-5">
@@ -36,7 +36,11 @@
                       <p class="my-4">Processo já designados</p>
                     </div>
                   </div>
-                  <button mat-raised-button color="primary">
+                  <button
+                    mat-raised-button
+                    color="primary"
+                    (click)="designaTecnico()"
+                  >
                     Selecionar técnico
                   </button>
                 </div>
@@ -127,9 +131,9 @@
                 <h3>Técnicos selecionados</h3>
                 <div class="card l-selection text-start">
                   <div class="l-selection__item card-header">
-                    <div class="selection">
-                      <mat-icon>person</mat-icon>
-                      <mat-icon>cancel</mat-icon>
+                    <div class="selection" id="lista">
+                      <mat-icon class="mat">person</mat-icon>
+                      <mat-icon class="mat">cancel</mat-icon>
                     </div>
 
                     <div class="selection">
