@@ -1,164 +1,110 @@
-<main class="container-fluid l-main">
-  <div class="row">
-    <h1 class="text-start fs-1">
-      Confirmação da designação do técnico responsável
-    </h1>
-    <hr />
-    <div class="col-12 my-5">
+<mat-dialog-content>
+  <main class="l-main">
+    <div class="content">
+      <div class="layout-flex-row">
+        <h1 mat-dialog-title>
+          Confirmação da designação do técnico responsável
+        </h1>
+        <button mat-mini-fab color="warn" (click)="cancel()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
       <div class="card">
         <div class="card-header">
           <h3>Resumo do processo</h3>
         </div>
 
-        <div class="card-body l-main__card">
-          <div class="row l-main__card-item">
-            <div class="col-12">
-              <div class="card">
-                <div class="col-12 my-2">
-                  <h4>Dados do processo</h4>
-                </div>
+        <div class="card-body">
+          <div fxLayout="column">
+            <mat-form-field>
+              <input matInput placeholder="202020202002" value="" disabled />
 
-                <div class="card-2">
-                  <div class="col-12 col-md-6 my-2">
-                    <div class="form-group">
-                      <label for="numeroProcesso"
-                        >Número e nome do processo</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="numeroProcesso"
-                        placeholder="Número e nome do processo"
-                        disabled
-                      />
-                    </div>
-                  </div>
+              <mat-hint>Número do processo</mat-hint>
+            </mat-form-field>
 
-                  <div class="col-12 col-md-6 my-2">
-                    <div class="form-group">
-                      <label for="input-fecha-designacion"
-                        >Data da designação</label
-                      >
-                      <input
-                        type="date"
-                        class="form-control"
-                        id="input-fecha-designacion"
-                        name="input-fecha-designacion"
-                        formControlName="fechaDesignacion"
-                        placeholder="Data da designação"
-                        required
-                        disabled
-                      />
-                    </div>
+            <mat-form-field>
+              <input matInput placeholder="Designação xxxs" value="" disabled />
+
+              <mat-hint>Nome do processo</mat-hint>
+            </mat-form-field>
+          </div>
+
+          <div class="row">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>
+                  <h4>Técnicos designados</h4>
+                </mat-card-title>
+              </mat-card-header>
+              <mat-card-content class="layout-flex">
+                <div fxLayout="row">
+                  <mat-icon> person </mat-icon>
+                  <div fxLayout="column">
+                    <span>Função</span>
+                    <span>Nome Sobrenome</span>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <h3>Técnicos selecionados</h3>
-                <div class="card l-selection text-start">
-                  <div class="l-selection__item card-header d-flex">
-                    <div class="selection">
-                      <mat-icon>person</mat-icon>
-                      <p>Nome</p>
-                      <p>Função</p>
-                    </div>
-
-                    <div class="selection">
-                      <mat-icon>person</mat-icon>
-                      <p>Nome</p>
-                      <p>Função</p>
-                    </div>
-
-                    <div class="selection">
-                      <mat-icon>person</mat-icon>
-                      <p>Nome</p>
-                      <p>Função</p>
-                    </div>
-
-                    <div class="selection">
-                      <mat-icon>person</mat-icon>
-                      <p>Nome</p>
-                      <p>Função</p>
-                    </div>
-
-                    <div class="selection">
-                      <mat-icon>person</mat-icon>
-                      <p>Nome</p>
-                      <p>Função</p>
-                    </div>
-
-                    <div class="selection">
-                      <mat-icon>person</mat-icon>
-                      <p>Nome</p>
-                      <p>Função</p>
-                    </div>
+                <div fxLayout="row">
+                  <mat-icon> person </mat-icon>
+                  <div fxLayout="column">
+                    <span>Função</span>
+                    <span>Nome Sobrenome</span>
                   </div>
                 </div>
-              </div>
+              </mat-card-content>
+            </mat-card>
 
-              <div class="col-12 col-md-6 my-2 l-main__card-textarea">
-                <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="10"
-                  placeholder="Observações"
-                ></textarea>
-              </div>
-            </div>
+            <mat-form-field>
+              <textarea
+                matInput
+                placeholder=""
+                value="lorem ipsum dolor sit amet consectetur adipiscing elit lorem ipsum dolor sit amet consectetur adipiscing elit lorem ipsum dolor sit amet consectetur adipiscing elit lorem ipsum dolor sit amet consectetur adipiscing elit lorem ipsum dolor sit amet consectetur adipiscing elit lorem ipsum dolor sit amet consectetur adipiscing elit lorem ipsum dolor sit amet consectetur adipiscing elit lorem ipsum dolor sit amet consectetur adipiscing elit lorem ipsum dolor sit amet consectetur adipiscing elit  "
+                disabled
+                cols="60"
+                rows="4"
+              ></textarea>
 
-            <div class="col-12 l-main__card-textarea p-5">
-              <div class="card-2">
-                <h3>Termo de complice</h3>
-                <input
-                  class="form-check-input mt-0"
-                  type="checkbox"
-                  value=""
-                  aria-label="Checkbox for following text input"
-                />
-                <input
-                  type="text"
-                  class="form-control"
-                  aria-label="Text input with checkbox"
-                  placeholder="Termo de complice"
-                />
-              </div>
-            </div>
+              <mat-hint>Motivo da designação</mat-hint>
+
+              <mat-hint align="end">
+                <span>0</span>
+                <span>/</span>
+                <span>500</span>
+              </mat-hint>
+            </mat-form-field>
           </div>
         </div>
+      </div>
 
-        <div class="card-footer">
-          <div class="row">
-            <div class="col-12 l-footer__button">
-              <button
-                mat-raised-button
-                color="warn"
-                type="submit"
-                form="form-designa-tecnico"
-                class="btn btn-primary"
-                (click)="cancel()"
-              >
-                <mat-icon>cancel</mat-icon>
-                Cancelar
-              </button>
+      <div class="card-footer">
+        <div class="row">
+          <div class="col-12 l-footer__button">
+            <button
+              mat-raised-button
+              color="warn"
+              type="submit"
+              form="form-designa-tecnico"
+              class="btn btn-primary"
+              (click)="cancel()"
+            >
+              <mat-icon>cancel</mat-icon>
+              Cancelar
+            </button>
 
-              <button
-                mat-raised-button
-                color="primary"
-                type="submit"
-                form="form-designa-tecnico"
-                class="btn btn-primary"
-              >
-                <mat-icon>check</mat-icon>
-                Designar
-              </button>
-            </div>
+            <button
+              mat-raised-button
+              color="primary"
+              type="submit"
+              form="form-designa-tecnico"
+              class="btn btn-primary"
+            >
+              <mat-icon>check</mat-icon>
+              Designar
+            </button>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
+</mat-dialog-content>
