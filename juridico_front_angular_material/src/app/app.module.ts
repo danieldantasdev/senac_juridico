@@ -32,6 +32,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatChipsModule } from '@angular/material/chips';
 
+import { HistoricoSoliciatacoesComponent } from './historico-soliciatacoes/historico-soliciatacoes.component';
+import {MatTableModule} from '@angular/material/table';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -53,6 +56,7 @@ import { MatChipsModule } from '@angular/material/chips';
     MatDatepickerModule,
     MatNativeDateModule,
     MatChipsModule,
+    MatTableModule,
   ],
   declarations: [
     AppComponent,
@@ -63,6 +67,7 @@ import { MatChipsModule } from '@angular/material/chips';
     DesignacaoTecnicoComponent,
     ConfirmaDesignacaoComponent,
     HistoricoNavegacaoComponent,
+    HistoricoSoliciatacoesComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
